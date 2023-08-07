@@ -59,7 +59,7 @@ class MarkovChain:
 
 chain = MarkovChain(order=14)
 
-with open("corpus.txt", "r") as file:
+with open("corpus.txt", "r", encoding="utf-8") as file:
     preloaded_corpus = file.read()
     for line in file.readlines():
         chain.add(preloaded_corpus)
@@ -110,7 +110,7 @@ def send_message():
         chain.add(session_training_data[key])
         corpus_to_save += "\n" + session_training_data[key]
     
-    with open("corpus.txt", "w") as file:
+    with open("corpus.txt", "w", encoding="utf-8") as file:
         file.write(corpus_to_save)
     
     result = {

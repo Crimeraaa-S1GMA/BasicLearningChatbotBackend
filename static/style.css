@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.messages {
+    width: 1000px;
+    height: 600px;
+    border: 1px solid white;
+    overflow-y: scroll;
+}

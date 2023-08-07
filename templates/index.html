@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <title>Web UI</title>
+</head>
+<body>
+    <div id="messages" class="messages"></div>
+    <input type="text" id="message" onkeydown="checkKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+    <span id="server-response"></span>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>

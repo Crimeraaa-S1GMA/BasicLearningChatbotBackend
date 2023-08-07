@@ -81,8 +81,8 @@ def main():
 def send_message():
     payload = request.get_json()
 
-    if len(payload["message"]) <= 0:
-        return "Enter a message."
+    if len(payload["message"]) <= 0 or len(payload["message"]) > 100:
+        return "invalid_message"
     else:
         if "uniqueConversationID" in session:
             prompt = session_training_data[session["uniqueConversationID"]][-20:]

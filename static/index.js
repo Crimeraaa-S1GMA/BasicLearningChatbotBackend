@@ -2,7 +2,7 @@ function sendMessage() {
     let messageContainer = document.getElementById("messages");
     let message = document.getElementById("message").value;
 
-    if (message.length > 0) {
+    if (message.length > 0 && message.length <= 100) {
         let yourMessageElement = document.createElement("p");
         yourMessageElement.innerHTML = "<b>You:</b> " + message;
         messageContainer.appendChild(yourMessageElement);

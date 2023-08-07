@@ -3,6 +3,14 @@ import secrets
 import random
 import json
 
+def htmlspecialchars(text):
+    return (
+        text.replace("&", "&amp;").
+        replace('"', "&quot;").
+        replace("<", "&lt;").
+        replace(">", "&gt;")
+    )
+
 class MarkovChain:
     def __init__(self, order=1):
         self.order = order
@@ -106,7 +114,8 @@ def send_message():
         file.write(corpus_to_save)
     
     result = {
-        "reply" : message[:-1]
+        "message" : htmlspecialchars(payload["message"]),
+        "reply" : htmlspecialchars(message[:-1])
     }
 
     return json.dumps(result)

@@ -49,7 +49,7 @@ class MarkovChain:
         return ''.join(new_words)
 
 
-chain = MarkovChain(order=5)
+chain = MarkovChain(order=14)
 
 with open("corpus.txt", "r") as file:
     preloaded_corpus = file.read()
@@ -74,9 +74,13 @@ def send_message():
     payload = request.get_json()
 
     if len(payload["message"]) <= 0:
-        prompt = "..." + "§"
+        return "Enter a message."
     else:
-        prompt = payload["message"].replace("§", "") + "§"
+        if "uniqueConversationID" in session:
+            prompt = session_training_data[session["uniqueConversationID"]][-20:]
+        else:
+            prompt = ""
+        prompt += payload["message"].replace("§", "") + "§"
     message = chain.generate(prompt, 1, False)
     while message[-1:] != "§":
         message = chain.generate(message, 1, True)

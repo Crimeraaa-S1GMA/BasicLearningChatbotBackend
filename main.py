@@ -94,9 +94,7 @@ def send_message():
         message = chain.generate(message, 1, True)
     
     if message.replace(".", "").lstrip().rstrip() == "§":
-        message = chain.generate(random.choice(list(chain.prefix_dict.keys()))[0], 1, False)
-        while message[-1:] != "§":
-            message = chain.generate(message, 1, True)
+        message = "I don't understand.§"
     
     if "uniqueConversationID" in session:
         session_training_data[session["uniqueConversationID"]] += prompt + message

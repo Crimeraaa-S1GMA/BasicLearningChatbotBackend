@@ -74,7 +74,7 @@ session_training_data = {
 }
 
 # CHANGE THIS WHEN DEPLOYING
-app.secret_key = ""
+app.secret_key = "testsecret"
 
 @app.route("/", methods=["GET"])
 def main():

@@ -1,11 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=REM:wght@400;600&display=swap');
+
 body {
+    margin: 0;
     background-color: black;
     color: white;
+    font-family: 'REM', sans-serif;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+hr {
+    border: 2px solid #2a2a2a;
+    margin: 10px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .messages {
-    width: 1000px;
+    width: 100%;
     height: 600px;
-    border: 1px solid white;
+    background-color: #181818;
     overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.messageContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.container {
+    background-color: black;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-small {
+    background-color: black;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox {
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    float: left;
+    flex-grow: 1;
+    background-color: #0a0a0a;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.sendButton {
+    float: left;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    background-color: #0a0a0a;
+    color: #3c60fe;
+    border: none;
+}
+
+.sendButton:hover {
+    background-color: #1b1b1b;
+    cursor: pointer;
+}
+
+.sendButton:active {
+    background-color: #2c2c2c;
+    cursor: pointer;
+}
+
+.chatForm {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.agreeButton {
+    margin: 5px;
+    padding: 10px;
+    background-color: #7edd48;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.agreeButton:hover {
+    padding: 10px;
+    background-color: #8eee59;
+    color: black;
+    text-decoration: none;
+}
+
+.agreeButton:active {
+    padding: 10px;
+    background-color: #9eee6a;
+    color: black;
+    text-decoration: none;
+}
+
+.warning {
+    color: #ff7878;
+}
+
+.crimbot-emoji-icon {
+    font-size: 70px;
 }

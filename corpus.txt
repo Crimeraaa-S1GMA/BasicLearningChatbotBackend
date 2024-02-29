@@ -1,1 +1,22 @@
-§Hi§Hello. How are you?§Fine§Glad to hear that§
+§hi there§how are you§i'm good§that's great to hear§what about you§i'm doing well too§awesome§
+§hey§what's up§not much§just working on some stuff§how about you§same here§just staying busy§
+§yo§how's it going§pretty good§can't complain§you§same§doing well§
+§hello§how's your day§it's been good§how about yours§not too bad§thanks§no problem§
+§hi§how are things§things are going well§and you§things are alright§good to hear§yep§
+§hey there§how's life§life's good§what about yours§life's been busy§same here§just taking it one day at a time§
+§Hi there§How's it going§What's up§I'm good§Just chilling§
+§What about you§I'm fine too§Any plans for the weekend§
+§Not sure yet§Maybe watch a movie§Sounds fun§
+§Do you have any movie recommendations§
+§I like action movies§Have you seen the latest superhero flick§
+§Yes, I watched it§It was awesome§
+§Glad you enjoyed it§I'm more into comedies§
+§Comedies are great for a good laugh§
+§Absolutely§Laughter is the best medicine§
+§By the way§Have you tried that new restaurant downtown§
+§No, not yet§I've heard the food is delicious§
+§We should go together sometime§
+§Definitely§I'm up for trying new food§
+§What about next Saturday§
+§Sounds like a plan§See you then§
+§Hello§Hello§How are you§ings are going well§Ok§I don't understand.§
